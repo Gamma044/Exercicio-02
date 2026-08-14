@@ -1,0 +1,8 @@
+/* 1. Mudando o fundo da página inteira */
+body {
+    background-color: #729fda; /* Cor de fundo cinza claro */
+    font-family: Arial, sans-serif;
+    color: #000000; /* Cor do texto geral */
+    margin: 0;
+    padding: 20px;
+}
