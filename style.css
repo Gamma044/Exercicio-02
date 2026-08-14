@@ -1,92 +1,104 @@
 /* ==========================================
-   CONTAINER E BOTÕES DE REDES SOCIAIS
+   1. ESTILO GERAL DA PÁGINA
    ========================================== */
-
-/* 1. Alinha os botões lado a lado e centraliza na tela */
-.botoes-container {
-    display: flex;             /* Ativa o Flexbox */
-    justify-content: center;   /* Centraliza os botões horizontalmente */
-    gap: 12px;                 /* Cria um espaço uniforme de 12px entre os botões */
-    margin-top: 16px;          /* Afasta a caixa de botões do texto acima */
+body {
+    background-color: #729fda;
+    font-family: Arial, sans-serif;
+    color: #424141;
+    margin: 0;
+    padding: 0 0 40px 0;
 }
 
-/* 2. Estilo base padrão de todos os botões */
+/* ==========================================
+   2. CABEÇALHO E PERFIL
+   ========================================== */
+.cabecalho {
+    background-color: #5e759b;
+    border-bottom: 3px solid #ffffff;
+    padding-bottom: 30px;
+} 
+
+.img-banner {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.perfil-container {
+    text-align: center;
+    padding: 0 20px;
+}
+
+.img-perfil {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #ffffff;
+    margin-top: -65px;
+    background-color: #1e293b;
+}
+
+h1 {
+    color: #38bdf8;
+    margin-top: 12px;
+    font-size: 1.8rem;
+}
+
+.subtitulo {
+    color: #ffffff;
+    font-size: 1rem;
+    margin-top: 4px;
+}
+
+/* ==========================================
+   3. BOTÕES DE REDES SOCIAIS
+   ========================================== */
+.botoes-container {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 16px;
+}
+
 .btn {
     display: inline-block;
-    padding: 8px 20px;          /* Espaçamento interno (8px cima/baixo, 20px laterais) */
-    border-radius: 6px;         /* Arredonda os cantos dos botões */
-    text-decoration: none;      /* Remove o sublinhado padrão dos links */
-    font-weight: 600;           /* Deixa o texto do botão levemente em negrito */
+    padding: 8px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
     font-size: 0.9rem;
-    color: #ffffff;             /* Cor do texto do botão */
-    transition: all 0.3s ease;  /* Suaviza a animação de passar o mouse */
+    color: #ffffff;
+    transition: all 0.3s ease;
 }
 
-/* 3. Cores específicas de cada rede social */
 .btn-github {
-    background-color: #24292e;  /* Tom escuro oficial do GitHub */
+    background-color: #24292e;
     border: 1px solid #444c56;
 }
 
 .btn-linkedin {
-    background-color: #0a66c2;  /* Azul oficial do LinkedIn */
+    background-color: #0a66c2;
 }
 
-/* 4. Efeito de interação ao passar o mouse (:hover) */
 .btn:hover {
-    transform: translateY(-2px); /* Faz o botão dar uma leve "subidinha" */
-    opacity: 0.9;                /* Dá um leve brilho/transparência ao passar o mouse */
+    transform: translateY(-2px);
+    opacity: 0.9;
 }
 
-
-/* 1. Mudando o fundo da página inteira */
-body {
-    background-color: #729fda; /* Cor de fundo cinza claro */
-    font-family: Arial, sans-serif;
-    color: #424141; /* Cor do texto geral */
-    margin: 0;
-    padding: 20px;
+/* ==========================================
+   4. ESTILO DO POEMA
+   ========================================== */
+.poema-container {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 0 20px;
 }
 
-.cabecalho {
-        background-color: #5e759b;
-        border-bottom: 3px solid #ffffff; /* Linha de destaque azul */
-        padding-bottom: 30px;
-} 
-/* IMAGEM DE CAPA (BANNER) */
-.img-banner {
-         width: 100%; /* Ocupa toda a largura da tela */
-         height: 180px; /* Altura fixa */
-         object-fit: cover; /* Impede que a imagem fique esticada ou esmagada */
-}
-
-/* CONTAINER DE INFORMAÇÕES */
-.perfil-container {
-          text-align: center; /* Centraliza o nome e a biografia */
-          padding: 0 20px;
-}
-
-/* FOTO DE PERFIL CIRCULAR */
-.img-perfil {
-          width: 130px;
-          height: 130px;
-          object-fit: cover;
-          border-radius: 50%; /* O TRUQUE: Transforma o quadrado num círculo perfeito! */
-          border: 4px solid #ffffff; /* Borda azul em volta da foto */
-          margin-top: -65px; /* Sobe a foto para sobrepor o banner */
-          background-color: #1e293b;
-}
-
-/* TÍTULO E PARÁGRAFO */
-h1 {
-       color: #38bdf8;
-       margin-top: 12px;
-       font-size: 1.8rem;
-}
 p {
-       color: #000000;
-       text-align: center;
-       font-weight: bold;
-       font-size: 1rem;
-       margin-top: 4px;
-}  
+    color: #000000;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-top: 16px;
+}
