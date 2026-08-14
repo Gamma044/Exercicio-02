@@ -2,14 +2,14 @@
 body {
     background-color: #729fda; /* Cor de fundo cinza claro */
     font-family: Arial, sans-serif;
-    color: #000000; /* Cor do texto geral */
+    color: #424141; /* Cor do texto geral */
     margin: 0;
     padding: 20px;
 }
 
 .cabecalho {
-        background-color: #1e293b;
-        border-bottom: 3px solid #38bdf8; /* Linha de destaque azul */
+        background-color: #5e759b;
+        border-bottom: 3px solid #ffffff; /* Linha de destaque azul */
         padding-bottom: 30px;
 } 
 /* IMAGEM DE CAPA (BANNER) */
@@ -31,7 +31,7 @@ body {
           height: 130px;
           object-fit: cover;
           border-radius: 50%; /* O TRUQUE: Transforma o quadrado num círculo perfeito! */
-          border: 4px solid #38bdf8; /* Borda azul em volta da foto */
+          border: 4px solid #ffffff; /* Borda azul em volta da foto */
           margin-top: -65px; /* Sobe a foto para sobrepor o banner */
           background-color: #1e293b;
 }
